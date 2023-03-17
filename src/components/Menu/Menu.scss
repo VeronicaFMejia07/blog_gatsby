@@ -1,0 +1,23 @@
+@import '../../sass/mediaqueries.scss';
+@import '../../sass/variables.scss';
+
+.container__menu{
+    
+    &-link{
+        text-transform: uppercase;
+        margin-bottom: 1rem !important;
+        color: $font-color;
+        text-align: center;
+        
+        &:hover{
+            color: $color-hover;
+        }
+    }
+
+    &-description{
+        font-size: 1.6rem;
+        margin-bottom: 1rem !important;
+        text-align: justify;
+        color: $font-color;
+    }
+}

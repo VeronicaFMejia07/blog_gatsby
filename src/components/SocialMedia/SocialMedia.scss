@@ -1,0 +1,31 @@
+@import '../../sass/mediaqueries.scss';
+@import '../../sass/variables.scss';
+
+.container__social{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    &-item{
+        color: $font-color;
+
+        .icon{
+            font-size: 2rem;
+            opacity: 1 !important;
+
+            &:hover{
+                &.facebook{
+                    color: $facebook;
+                }
+
+                &.instagram{
+                    color: $instagram;
+                }
+
+                &.linkedin{
+                    color: $linkedin;
+                }
+            }
+        }
+    }
+}

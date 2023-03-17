@@ -1,0 +1,31 @@
+@import '../../sass/mediaqueries.scss';
+@import '../../sass/variables.scss';
+
+.container__blog {
+  
+    > .ui.grid {
+        //Primer grid que encuentre aplique estilos
+        margin: 0 !important;
+        min-height: 100vh;
+        
+       
+        >.column {
+            //Primer columna que encuentre aplique estilos
+            padding: 2rem;
+
+            &:first-of-type{ //Primer elemento de columna que encuentre
+                background-color: $background-column;
+            }
+
+            &:last-of-type{
+                min-height: 100vh;
+                overflow-y: scroll; //Si se supera la altura se pueda hacer scroll
+                
+                //Ocultar scroll
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+            }
+        }
+    }
+}

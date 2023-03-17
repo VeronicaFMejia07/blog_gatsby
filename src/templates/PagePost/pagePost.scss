@@ -1,0 +1,104 @@
+@import '../../sass/mediaqueries.scss';
+@import '../../sass/variables.scss';
+
+.container__page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+    &-title {
+        text-align: center;
+        color: $font-color-title;
+        text-transform: uppercase;
+        animation: effect .75s ease-out infinite;
+        text-shadow: 0px 0px 5px #fff,
+        0px 0px 7px #fff;
+       
+        @keyframes effect {
+            from {
+                text-shadow: 0px 0px 10px #fff,
+                    0px 0px 10px rgba(130, 204, 204, 0.596),
+                    0px 0px 25px rgba(130, 204, 204, 0.596),
+                    0px 0px 25px rgba(130, 204, 204, 0.596),
+                    0px 0px 25px rgba(130, 204, 204, 0.596),
+                    0px 0px 25px rgba(130, 204, 204, 0.596),
+                    0px 0px 25px rgba(130, 204, 204, 0.596),
+                    0px 0px 25px rgba(130, 204, 204, 0.596),
+                    0px 0px 50px rgba(130, 204, 204, 0.596),
+                    0px 0px 50px rgba(130, 204, 204, 0.596),
+                    0px 0px 50px rgb(194, 241, 151),
+                    0px 0px 150px rgb(194, 214, 151),
+                    0px 10px 100px rgb(194, 214, 151),
+                    0px 10px 100px rgb(194, 214, 151),
+                    0px 10px 100px rgb(194, 214, 151),
+                    0px 10px 100px rgb(194, 214, 151),
+                    0px -10px 100px rgb(194, 214, 151),
+                    0px -10px 100px rgb(194, 214, 151);
+            }
+        }
+    }
+
+    &-img {
+        width: 35%;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 0px 15px #000;
+        border-radius: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &-body {
+        b {
+            display: block;
+            width: 80%;
+            color: $font-color-title;
+            text-align: start;
+            font-size: 1.4rem;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: $line;
+        }
+        i{
+            display: block;
+            font-size: 1.2rem;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: $line;
+        }
+
+        p{
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            width: 80%;
+            text-align: justify;
+        }
+
+        ol {
+            list-style: none; /* Quitamos los marcadores */
+            padding: 0;/* Quitamos el padding por defecto de la lista */
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.2rem;
+            width: 80%;
+            text-align: justify;
+            line-height: $line;
+        }
+
+        li::before {
+            /* Añadimos contenido antes de cada elemento de la lista */
+            content: "\2022";
+            /* Insertamos el marcador */
+            padding-right: 8px;
+            /* Establecemos el espacio entre las viñetas y el list item */
+            color: $font-color-title;
+            /* Coloreamos la viñeta */
+            font-size: 1.3rem;
+            width: 80%;
+            text-align: justify;
+        }
+    }
+}

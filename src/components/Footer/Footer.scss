@@ -1,0 +1,19 @@
+@import '../../sass/mediaqueries.scss';
+@import '../../sass/variables.scss';
+
+.copyright{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    color: $font-color;
+    
+    &__url{
+        color:$font-color;
+
+        &:hover{
+            color: $color-hover;
+        }
+    }
+}

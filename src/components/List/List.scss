@@ -1,0 +1,26 @@
+@import '../../sass/mediaqueries.scss';
+@import '../../sass/variables.scss';
+
+.container__list{
+    margin: 0 !important;
+    justify-content: center;
+
+    &_card{
+        width: 100% !important;
+    }
+}
+
+.header__title{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+//Clase que viene definida por defecto en el semantic-ui, en el componente Card
+.ui.card{
+   &:hover{
+    border: 1px solid $font-color-title !important;
+    box-shadow: 0px 0px 25px $font-color-title,
+    inset 0px 0px 10px rgba(236, 181, 133, 0.6);
+   }
+}

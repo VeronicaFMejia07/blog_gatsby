@@ -1,0 +1,9 @@
+.container__courses{
+    margin-top: 2rem;
+
+    &-item{
+        .item__img{
+            padding: .5rem 0;
+        }
+    }
+}
